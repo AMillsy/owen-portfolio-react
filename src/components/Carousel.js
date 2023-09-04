@@ -3,10 +3,12 @@ import img2 from "../images/img2.png";
 import "../styles/Carousel.css";
 const Carousel = () => {
   return (
-    <div style={{ backgroundColor: "white" }}>
-      <h3>Title</h3>
-      <div>
-        <img className="carouselImages" src={img1}></img>
+    <div>
+      <h3 className="carouselTitle">Title</h3>
+      <div className="carousel">
+        <div className="carouselImages">
+          <img src={img1}></img>
+        </div>
         <img className="carouselImages" src={img2} />
       </div>
     </div>
