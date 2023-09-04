@@ -1,0 +1,9 @@
+.carouselImages {
+  width: 40%;
+  height: 400px;
+  object-fit: cover;
+  margin: 20px;
+  border: 20px solid rgb(0, 2, 90);
+  border-radius: 4rem;
+  overflow: hidden;
+}

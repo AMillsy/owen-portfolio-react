@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #4e878c;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: space-between;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  margin: 40px;
+  color: white;
+}
+
+nav ul a {
+  color: white;
+  font-size: 150%;
+}
+
+h1 {
+  font-size: 300%;
+  margin: 20px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  letter-spacing: 5px;
+}
