@@ -38,10 +38,10 @@ const Carousel = () => {
 
     if (isLeft) {
       carouselRef.current.scrollLeft -= width;
-      return console.log("This is left");
+      return;
     }
     carouselRef.current.scrollLeft += width;
-    return console.log("This is right");
+    return;
   };
 
   return (
