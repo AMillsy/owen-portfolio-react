@@ -1,6 +1,6 @@
 import img1 from "../images/img1.jpeg";
 import img2 from "../images/img2.png";
-import { createRef, useRef, useState, useLayoutEffect } from "react";
+import { createRef, useRef, useState, useLayoutEffect, useEffect } from "react";
 import "../styles/Carousel.css";
 const Carousel = () => {
   let isDragStart = false,
@@ -12,8 +12,13 @@ const Carousel = () => {
 
   const [width, setWidth] = useState(0);
 
-  useLayoutEffect(() => {
-    setWidth(firstImageRef.offsetWidth + 10);
+  useEffect(() => {
+    if (firstImageRef.width < 300) {
+      setWidth(600);
+      return;
+    }
+    setWidth(firstImageRef.offsetWidth + 50);
+    console.log(firstImageRef.width);
   });
 
   const dragStart = (e) => {

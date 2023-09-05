@@ -53,3 +53,15 @@
 .right {
   right: 0;
 }
+
+@media only screen and (max-width: 1200px) {
+  .carouselImages {
+    width: calc(100% / 2);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .carouselImages {
+    width: calc(100%);
+  }
+}
