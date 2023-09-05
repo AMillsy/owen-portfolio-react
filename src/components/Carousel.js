@@ -13,7 +13,7 @@ const Carousel = () => {
   const [width, setWidth] = useState(0);
 
   useLayoutEffect(() => {
-    setWidth(firstImageRef.offsetWidth);
+    setWidth(firstImageRef.offsetWidth + 10);
   });
 
   const dragStart = (e) => {
